@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackPwaManifestPlugin = require('webpack-pwa-manifest');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const WebpackPwaManifestPlugin = require('webpack-pwa-manifest')
 // const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 // const LiveReloadPlugin = require('webpack-livereload-plugin');
 
@@ -111,4 +111,4 @@ module.exports = {
   // <!-- Dependencies -->
   // <script src="./node_modules/react/umd/react.development.js"></script>
   // <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
-};
+}
