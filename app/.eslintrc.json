@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-typescript"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "semi": 0,
+    "@typescript-eslint/semi": ["error", "never"]
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  }
+}

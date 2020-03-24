@@ -1,10 +1,13 @@
 {
   "name": "ptimmer",
   "version": "0.0.1",
-  "description": "",
-  "main": "src/index.js",
+  "description": "PTimmer",
+  "main": "src/index.tsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --host 0.0.0.0",
+    "webpack": "webpack -w",
+    "serve": "serve dist -p 5000 -s -c 0"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,41 @@
   "bugs": {
     "url": "https://github.com/juniorUsca/ptimmer/issues"
   },
-  "homepage": "https://github.com/juniorUsca/ptimmer#readme"
+  "homepage": "https://github.com/juniorUsca/ptimmer#readme",
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/preset-react": "7.9.1",
+    "@babel/preset-typescript": "7.9.0",
+    "@types/react": "16.9.25",
+    "@types/react-dom": "16.9.5",
+    "@typescript-eslint/eslint-plugin": "2.24.0",
+    "@typescript-eslint/parser": "2.24.0",
+    "babel-loader": "8.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-typescript": "7.2.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.0",
+    "html-webpack-plugin": "4.0.0-beta.14",
+    "serve": "11.3.0",
+    "source-map-loader": "0.2.4",
+    "typescript": "3.8.3",
+    "webpack": "4.42.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.10.3",
+    "webpack-livereload-plugin": "2.3.0",
+    "webpack-pwa-manifest": "4.2.0",
+    "workbox-webpack-plugin": "5.1.1"
+  },
+  "dependencies": {
+    "luxon": "1.22.0",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet-async": "1.0.4",
+    "react-icons": "3.9.0",
+    "react-router-dom": "5.1.2",
+    "styled-components": "5.0.1"
+  }
 }
