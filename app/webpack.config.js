@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackPwaManifestPlugin = require('webpack-pwa-manifest')
 // const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
@@ -20,6 +21,9 @@ module.exports = {
     // chunkFilename: '[id].[chunkhash].js',
     filename: '[name].js',
     chunkFilename: '[id].js',
+  },
+  devServer: {
+    historyApiFallback: true,
   },
 
   plugins: [
@@ -104,10 +108,10 @@ module.exports = {
   // assume a corresponding global variable exists and use that instead.
   // This is important because it allows us to avoid bundling all of our
   // dependencies, which allows browsers to cache those libraries between builds.
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
-  },
+  // externals: {
+  //   react: 'React',
+  //   'react-dom': 'ReactDOM',
+  // },
   // <!-- Dependencies -->
   // <script src="./node_modules/react/umd/react.development.js"></script>
   // <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>

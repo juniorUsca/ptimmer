@@ -2,6 +2,9 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "airbnb-typescript"
   ],
   "parserOptions": {
@@ -12,7 +15,17 @@
   ],
   "rules": {
     "semi": 0,
-    "@typescript-eslint/semi": ["error", "never"]
+    "@typescript-eslint/semi": ["error", "never"],
+    "@typescript-eslint/member-delimiter-style": ["error", {
+      "multiline": {
+        "delimiter": "none",
+        "requireLast": false
+      },
+      "singleline": {
+        "delimiter": "comma",
+        "requireLast": false
+      }
+    }]
   },
   "env": {
     "browser": true,
