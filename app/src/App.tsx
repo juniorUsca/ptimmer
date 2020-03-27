@@ -21,7 +21,8 @@ const App = (): React.ReactElement => {
             path={`${urlPath}`}
             exact
           >
-            LOGIN/REGISTER
+            <Home />
+            {/* LOGIN/REGISTER */}
           </Route>
         )}
       </Switch>
