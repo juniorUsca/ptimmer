@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "custom-rules" // this rules includes custom rules for react
+  ],
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "semi": ["error", "never"],
+    "max-len": [2, 256, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false
+    }],
+    "react/jsx-one-expression-per-line": 0,
+    // "jsx-a11y/label-has-associated-control": 0,
+    // "jsx-a11y/label-has-for": [ 2, {
+    //   "required": {
+    //       "some": [ "nesting", "id" ]
+    //   }
+    // }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    // "no-unused-expressions": "off", // para soportar ? operator
+    // "babel/no-unused-expressions": "error" // para soportar ? operator
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  }
+}
