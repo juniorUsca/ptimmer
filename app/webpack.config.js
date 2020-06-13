@@ -24,6 +24,8 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    compress: true, // Enable gzip compression for everything served
+    port: 9000,
   },
 
   plugins: [
