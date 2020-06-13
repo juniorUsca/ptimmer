@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    //"babel-plugin-styled-components",
+    // "@babel/plugin-syntax-dynamic-import", // para multiples imports
+    "@babel/plugin-proposal-optional-chaining" // para '?'
+  ]
+}
